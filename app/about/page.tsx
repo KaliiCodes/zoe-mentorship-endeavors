@@ -37,7 +37,7 @@ export default function AboutPage() {
     <main className="container mx-auto px-4 py-16 space-y-12">
       <div className="relative w-full h-96 md:h-[500px] mb-12">
         <Image
-          src="/images/about-photo.jpg"
+          src="/images/about.jpg"
           alt="About Zoe Mentorship"
           fill
           className="object-cover rounded-lg shadow-lg"
