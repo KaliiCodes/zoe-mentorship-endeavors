@@ -12,9 +12,10 @@ export default function SubHeader() {
     <nav className="flex items-center space-x-30 text-sm font-medium">
   <Link href="/" className="hover:text-yellow-300">Home</Link>
   <Link href="/about" className="hover:text-yellow-300">About</Link>
-  <Link href="/programs" className="hover:text-yellow-300">Our Programs</Link>
+  <Link href="/programs" className="hover:text-yellow-300">Programs</Link>
   <Link href="/activities" className="hover:text-yellow-300">Activities</Link>
   <Link href="/contact" className="hover:text-yellow-300">Contact</Link>
+
 </nav>
 
 

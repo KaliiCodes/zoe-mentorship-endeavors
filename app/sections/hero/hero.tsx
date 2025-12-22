@@ -5,15 +5,15 @@ import Image from "next/image";
 
 const slides = [
   {
-    src: "/images/zoe1.jpg",
+    src: "/images/zoeh1.jpg",
     description: "Empowering individuals and communities through transformative mentorship and coaching.",
   },
   {
-    src: "/images/zoe2.jpg",
+    src:"/images/zoeh1.jpg",
     description: "Unlocking potential and inspiring leadership for meaningful impact.",
   },
   {
-    src: "/images/zoe1.jpg",
+    src: "/images/zoeh2.jpg",
     description: "Guiding individuals to thrive in all spheres of life.",
   },
 ];
