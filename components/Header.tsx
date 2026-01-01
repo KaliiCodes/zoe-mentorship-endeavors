@@ -38,7 +38,7 @@ const Header = () => {
 
         <a
   href="#"
-  className="ml-auto bg-yellow-400 text-black font-bold py-3 px-8 text-lg rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300 min-w-[140px]"
+  className="ml-auto bg-yellow-400 text-black font-bold py-3 px-8 text-lg rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300 min-w-35"
 >
   Donate Now
 </a>
