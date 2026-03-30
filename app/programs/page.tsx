@@ -21,8 +21,8 @@ export default function ProgramsPage() {
       <ProgramGrid showTopics />
       <section className="pb-6">
         <Container>
-          <div className="surface-card rounded-[2rem] px-6 py-8 text-center sm:px-10">
-            <p className="text-lg font-semibold text-[var(--primary)] sm:text-xl">
+          <div className="surface-card rounded-4xl px-6 py-8 text-center sm:px-10">
+            <p className="text-lg font-semibold text-(--primary) sm:text-xl">
               Ready to tailor a program for your school or group?
             </p>
             <a

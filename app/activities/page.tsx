@@ -22,8 +22,8 @@ export default function ActivitiesPage() {
       <ActivitiesGrid />
       <section className="pb-6">
         <Container>
-          <div className="surface-card rounded-[2rem] px-6 py-8 text-center">
-            <p className="text-lg font-semibold text-[var(--primary)] sm:text-xl">
+          <div className="surface-card rounded-4xl px-6 py-8 text-center">
+            <p className="text-lg font-semibold text-(--primary) sm:text-xl">
               Pair these activities with a program for stronger follow-through and better engagement.
             </p>
           </div>

@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body
-        className={`${headingFont.variable} ${bodyFont.variable} min-h-screen bg-[var(--surface)] text-[var(--text-primary)] antialiased`}
+        className={`${headingFont.variable} ${bodyFont.variable} min-h-screen bg-(--surface) text-(--text-primary) antialiased`}
       >
         <div className="flex min-h-screen flex-col">
           <SiteHeader />
