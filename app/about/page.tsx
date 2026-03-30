@@ -1,63 +1,52 @@
-"use client";
-
+import type { Metadata } from "next";
 import Accordion from "@/components/Accordion";
-import CoreValues from "@/app/sections/CoreValues/CoreValues";
-import Image from "next/image";
+import PageHero from "@/components/sections/PageHero";
+import ValuesGrid from "@/components/sections/ValuesGrid";
+import Container from "@/components/ui/Container";
+import SectionIntro from "@/components/ui/SectionIntro";
+import { aboutSections } from "@/content/site";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn how ZOE MENTORSHIP ENDEAVORS approaches mentorship, leadership development, and whole-person growth.",
+};
 
 export default function AboutPage() {
-
-  
-  const accordionItems = [
-    {
-      title: "Tagline",
-      content: <p className="text-gray-700 font-semibold">Admirable Transformation</p>,
-    },
-    {
-      title: "Our Vision",
-      content: (
-        <p className="text-gray-700">
-          To be a leading mentorship and coaching organization that empowers individuals to discover their purpose, maximize their potential, and thrive in all spheres of life.
-        </p>
-      ),
-    },
-    {
-      title: "Our Mission",
-      content: (
-        <p className="text-gray-700">
-          To provide transformative mentorship and personal development programs that inspire growth, enhance leadership, and equip individuals with life skills for impact and excellence.
-        </p>
-      ),
-    },
-    {
-      title: "Core Values",
-  content: <><CoreValues /></>    },
-  ];
+  const accordionItems = aboutSections.map((section) => ({
+    title: section.title,
+    content: <p>{section.content}</p>,
+  }));
 
   return (
-    <main className="container mx-auto px-4 py-16 space-y-12">
-      <div className="relative w-full h-96 md:h-125 mb-12">
-        <Image
-          src="/images/about.jpg"
-          alt="About Zoe Mentorship"
-          fill
-          className="object-cover rounded-lg shadow-lg"
-        />
-      </div>
+    <>
+      <PageHero
+        eyebrow="About"
+        title="Mentorship with structure, warmth, and clear outcomes."
+        description="ZOE MENTORSHIP ENDEAVORS exists to help learners, leaders, and communities grow into disciplined, resilient, future-ready people."
+        imageSrc="/images/about.jpg"
+        imageAlt="Participants listening during a mentorship session"
+      />
 
-     <div className="max-w-3xl mx-auto text-left space-y-4 mb-12">
-  <h1 className="text-4xl font-bold text-yellow-500">
-    About Zoe Mentorship
-  </h1>
+      <section className="py-16 sm:py-20">
+        <Container className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+          <div className="space-y-6">
+            <SectionIntro
+              eyebrow="Our Story"
+              title="A clearer narrative for visitors and partner schools."
+              description="The site now mirrors the heart of the organization more closely: mentorship that is practical, values-led, and responsive to the real needs of young people."
+            />
+            <p className="prose-copy text-base">
+              We focus on helping participants discover purpose, strengthen leadership habits, build emotional
+              resilience, and make healthy decisions that shape their future well.
+            </p>
+          </div>
 
-  <p className="text-purple-400 text-lg leading-relaxed">
-    Empowering individuals and communities through transformative mentorship and coaching. 
-    Our programs are designed to help you discover your purpose, maximize your potential, 
-    and thrive in all spheres of life.
-  </p>
-</div>
+          <Accordion items={accordionItems} />
+        </Container>
+      </section>
 
-
-      <Accordion items={accordionItems} />
-    </main>
+      <ValuesGrid />
+    </>
   );
 }
